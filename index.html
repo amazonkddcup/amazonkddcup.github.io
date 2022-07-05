@@ -1,6 +1,281 @@
-<html>
-  <center>
-  <h1>KDD Cup 2022 Workshop: ESCI Challenge for Improving Product Search</h1>
-  <h2><a href="https://www.aicrowd.com/challenges/esci-challenge-for-improving-product-search?source=mlcontests#kdd-cup-workshop">Link to challenge</a></h2>
-  </center>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="KDD Cup 2022 Workshop: The primary objective of this competition is to build new ranking strategies and, simultaneously, identify interesting categories of results (i.e., substitutes) that can be used to improve the customer experience when searching for products." />
+        <meta name="author" content="Nurendra Choudhary" />
+        <title>KDD Cup 2022 Workshop: ESCI Challenge for Improving Product Search</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/f3573b1642.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav nav-pills ms-auto" style="font-size:medium; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                        <li class="nav-item"><a class="nav-link" style="color:white;" href="#intro" >INTRODUCTION</a></li>&nbsp;&nbsp;
+                        <li class="nav-item"><a class="nav-link" style="color:white;" href="#program">PROGRAM</a></li>&nbsp;&nbsp;
+                        <li class="nav-item"><a class="nav-link" style="color:white;" href="#papers">ACCEPTED PAPERS</a></li>&nbsp;&nbsp;
+                        <li class="nav-item"><a class="nav-link" style="color:white;" href="#organizers">ORGANIZERS</a></li>&nbsp;&nbsp;
+                        <li class="nav-item"><a class="nav-link" style="color:white;" href="#data">DATA</a></li>&nbsp;&nbsp;
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="text-white" style="background:transparent url('assets/opener.jpeg') no-repeat center center /cover;opacity: 0.9;">
+            <div class="container px-4 text-center" style="font-size:medium; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                <h1 class="fw-bolder" style="color:ivory;">KDD Cup 2022 Workshop:</h1>
+                <h2 class="fw-bolder">ESCI Challenge for Improving Product Search</h2>
+                <p class="lead">Held in conjunction with <a href="https://kdd.org/kdd2022/">KDD'22</a>
+                    Aug 15th, 2022 - Washington D.C., USA</p>
+            </div>
+        </header>
+        <!-- Intro section-->
+        <section id="intro">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 style="text-align: center;">INTRODUCTION</h2>
+                        <p class="lead" style="text-align: justify;">The objective of this workshop is to discuss the winning submissions of the 
+                            KDDCup 2022 Challenge on improving product search. In this challenge, we introduce the “Shopping Queries Data Set”, 
+                            a large dataset of difficult search queries, published with the aim of fostering research in the area of semantic 
+                            matching of queries and products. For each query, the dataset provides a list of up to 40 potentially relevant results, 
+                            together with ESCI relevance judgements (Exact, Substitute, Complement, Irrelevant) indicating the relevance of the 
+                            product to the query. Each query-product pair is accompanied by additional information.  The dataset is multilingual, 
+                            as it contains queries in English, Japanese, and Spanish. More details of this challenge are available here;
+                            <a href="https://www.aicrowd.com/challenges/esci-challenge-for-improving-product-search">https://www.aicrowd.com/challenges/esci-challenge-for-improving-product-search</a>.
+                        </p>
+                        <h3>Objective and Tasks</h3>
+                        The primary objective of this competition is to build new ranking strategies and, simultaneously, identify interesting categories of results 
+                        (i.e., substitutes) that can be used to improve the customer experience when searching for products. The three different tasks for this KDD 
+                        Cup competition using the Shopping Queries Dataset are:<br/>
+                        <ol>
+                            <li><b>Query-Product Ranking:</b> Given a user specified query and a list of matched products, the goal of this task is to rank the products so that the relevant products are ranked above the non-relevant ones.</li>
+                            <li><b>Multi-class Product Classification:</b> Given a query and a result list of products retrieved for this query, the goal of this task is to classify each product as being an Exact, Substitute, Complement, or Irrelevant match for the query.</li>
+                            <li><b>Product Substitute Identification:</b> This task will measure the ability of the systems to identify the substitute products in the list of results for a given query.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Program section-->
+        <section class="bg-light" id="program">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 style="text-align: center;">SCHEDULE</h2>
+                        <p class="lead" style="text-align: center;">August 15th, 2022, 1PM–5PM (Eastern Standard Time), Washington D.C., USA.</div>
+                            <div class="list-group list-group-flush">
+                                <a class="list-group-item list-group-item-action">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><span><i class="fas fa-book-open" style="color:#0275d8;"></i></span>&nbsp;&nbsp;Opening</h5>
+                                    <h5><span><i class="fas fa-clock" style="color:#0275d8;"></i></span>&nbsp;&nbsp;1-1.15 PM</h5>
+                                  </div>
+                                  <p class="mb-1">Introduction by organizers.</p>
+                                </a>
+                                <a class="list-group-item list-group-item-action">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><span><i class="fas fa-bars-progress" style="color:#0275d8;"></i></span>&nbsp;&nbsp;Task 1: Query-Product Ranking</h5>
+                                    <h5><span><i class="fas fa-clock" style="color:#0275d8;"></i></span>&nbsp;&nbsp;1.15-2.15 PM</h5>
+                                  </div>
+                                  <p class="mb-1">
+                                    <ul>
+                                        <li>First place winner (15mins) </li>
+                                        <li>Second place winner (15mins) </li>
+                                        <li>Third place winner (15mins) </li>
+                                        <li>Short presentations by other winners from Top 10  (15mins)</li>
+                                    </ul>
+                                  </p>
+                                </a>
+                                <a class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                      <h5 class="mb-1"><span><i class="fas fa-bars-progress" style="color:#0275d8;"></i></span>&nbsp;&nbsp;Task 2: Multi-Class Product Classification</h5>
+                                      <h5><span><i class="fas fa-clock" style="color:#0275d8;"></i></span>&nbsp;&nbsp;2.15-3.15 PM</h5>
+                                    </div>
+                                    <p class="mb-1">
+                                      <ul>
+                                          <li>First place winner (15mins) </li>
+                                          <li>Second place winner (15mins) </li>
+                                          <li>Third place winner (15mins) </li>
+                                          <li>Short presentations by other winners from Top 10  (15mins)</li>
+                                      </ul>
+                                    </p>
+                                  </a>
+                                <a class="list-group-item list-group-item-action">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><span><i class="fa-solid fa-mug-hot" style="color:#0275d8;"></i></span>&nbsp;&nbsp;Coffee Break</h5>
+                                    <h5><span><i class="fas fa-clock" style="color:#0275d8;"></i></span>&nbsp;&nbsp;3.15-3.45 PM</h5>
+                                  </div>
+                                </a>
+                                <a class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                      <h5 class="mb-1"><span><i class="fas fa-bars-progress" style="color:#0275d8;"></i></span>&nbsp;&nbsp;Task 3: Product Substitute Identification</h5>
+                                      <h5><span><i class="fas fa-clock" style="color:#0275d8;"></i></span>&nbsp;&nbsp;3.45-4.45 PM</h5>
+                                    </div>
+                                    <p class="mb-1">
+                                      <ul>
+                                          <li>First place winner (15mins) </li>
+                                          <li>Second place winner (15mins) </li>
+                                          <li>Third place winner (15mins) </li>
+                                          <li>Short presentations by other winners from Top 10  (15mins)</li>
+                                      </ul>
+                                    </p>
+                                </a>
+                                <a class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                      <h5 class="mb-1"><span><i class="fas fa-book" style="color:#0275d8;"></i></span>&nbsp;&nbsp;Closing</h5>
+                                      <h5><span><i class="fas fa-clock" style="color:#0275d8;"></i></span>&nbsp;&nbsp;4.45-5.00 PM</h5>
+                                    </div>
+                                    <p class="mb-1">Concluding remarks by organizers.</p>
+                                </a>
+                            </div>             
+                </div>
+            </div>
+        </section>
+        <!-- Accepted papers section-->
+        <section id="papers">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>ACCEPTED PAPERS</h2>
+                        <p class="lead">TBD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Organizers section-->
+        <section class="bg-light" id="organizers">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 style="text-align: center;">ORGANIZERS</h2>
+                        <br><br>
+                        <div class="row">
+                        <div class="mt-6 col-sm-3">
+                            <a class="navbar-brand js-scroll-trigger" href="https://people.cs.vt.edu/~reddy/">
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto" src="./assets/reddy.png" alt="Chandan Reddy"></span>
+                            <p class="lead" style="text-align: center;">
+                                <a style="color:#0275d8; text-decoration: none; " href="https://people.cs.vt.edu/~reddy/"><b>Chandan Reddy</b></a><br>
+                                <span><i class="fa-solid fa-school"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://vt.edu/">Virginia Tech</a><br>
+                                <span><i class="fa-brands fa-amazon"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://www.amazon.science/">Amazon Scholar</a>
+                            </p>                            
+                            </a>
+                        </div>
+                        <div class="mt-6 col-sm-3">
+                            <a class="navbar-brand js-scroll-trigger" href="https://nurendra.me/">
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto" src="./assets/nurendra.jpeg" alt="Nurendra Choudhary"></span>
+                            <p class="lead" style="text-align: center;">
+                                <a style="color:#0275d8; text-decoration: none; display: inline-block" href="https://nurendra.me"><b>Nurendra Choudhary</b></a><br>
+                                <span><i class="fa-solid fa-school"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://vt.edu/">Virginia Tech</a>
+                            </p>                            
+                            </a>
+                        </div>
+                        <div class="mt-6 col-sm-3">
+                            <a class="navbar-brand js-scroll-trigger" href="https://www.amazon.science/author/lluis-marquez">
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto" src="./assets/lluis.jpeg" alt="Lluis Marquez"></span>
+                            <p class="lead" style="text-align: center;">
+                                <a style="color:#0275d8; text-decoration: none; display: inline-block" href="https://www.amazon.science/author/lluis-marquez"><b>Lluís Marquez</b></a><br>
+                                <span><i class="fa-brands fa-amazon"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://www.amazon.science/">Amazon</a>
+                            </p>                            
+                            </a>
+                        </div>
+                        <div class="mt-6 col-sm-3">
+                            <a class="navbar-brand js-scroll-trigger" href="https://www.linkedin.com/in/franbvalero/">
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto" src="./assets/fran.jpeg" alt="Fran Valero"></span>
+                            <p class="lead" style="text-align: center;">
+                                <a style="color:#0275d8; text-decoration: none; display: inline-block" href="https://www.linkedin.com/in/franbvalero/"><b>Fran Valero</b></a><br>
+                                <span><i class="fa-brands fa-amazon"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://www.amazon.science/">Amazon</a>
+                            </p>                            
+                            </a>
+                        </div>
+                        <div class="mt-6 col-sm-3">
+                            <a class="navbar-brand js-scroll-trigger" href="https://sites.google.com/view/raonikhil/home">
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto" src="./assets/nikhil.jpeg" alt="Nikhil Rao"></span>
+                            <p class="lead" style="text-align: center;">
+                                <a style="color:#0275d8; text-decoration: none; display: inline-block" href="https://sites.google.com/view/raonikhil/home"><b>Nikhil Rao</b></a><br>
+                                <span><i class="fa-brands fa-amazon"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://www.amazon.science/">Amazon</a>
+                            </p>                            
+                            </a>
+                        </div>
+                        <div class="mt-6 col-sm-3">
+                            <a class="navbar-brand js-scroll-trigger" href="https://unorganizedmachines.wordpress.com/hugo-zaragoza/">
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto" src="./assets/hugo.jpeg" alt="Hugo Zaragoza"></span>
+                            <p class="lead" style="text-align: center;">
+                                <a style="color:#0275d8; text-decoration: none; display: inline-block" href="https://unorganizedmachines.wordpress.com/hugo-zaragoza/"><b>Hugo Zaragoza</b></a><br>
+                                <span><i class="fa-brands fa-amazon"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://www.amazon.science/">Amazon</a>
+                            </p>                            
+                            </a>
+                        </div>
+                        <div class="mt-6 col-sm-3">
+                            <a class="navbar-brand js-scroll-trigger" href="https://sites.google.com/view/sambaranb/">
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto" src="./assets/sambaran.jpeg" alt="Sambaran Bandyopadhyay"></span>
+                            <p class="lead" style="text-align: center;">
+                                <a style="color:#0275d8; text-decoration: none; display: inline-block" href="https://sites.google.com/view/sambaranb/"><b>Sambaran Bandyopadhyay</b></a><br>
+                                <span><i class="fa-brands fa-amazon"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://www.amazon.science/">Amazon</a>
+                            </p>                            
+                            </a>
+                        </div>
+                        <div class="mt-6 col-sm-3">
+                            <a class="navbar-brand js-scroll-trigger" href="https://www.linkedin.com/in/arnab-biswas-41617623/">
+                            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto" src="./assets/arnab.jpeg" alt="Arnab Biswas"></span>
+                            <p class="lead" style="text-align: center;">
+                                <a style="color:#0275d8; text-decoration: none; display: inline-block" href="https://www.linkedin.com/in/arnab-biswas-41617623/"><b>Arnab Biswas</b></a><br>
+                                <span><i class="fa-brands fa-amazon"></i></span>&nbsp;&nbsp;
+                                <a style="color:#E77725; text-decoration: none;" href="https://www.amazon.science/">Amazon</a>
+                            </p>                            
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Data section-->
+        <section id="data">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>DATA</h2>
+                        <p class="lead">The data will be made available at the following site after the competition is over.<br>
+                            <a href="https://github.com/amazon-research/esci-code">https://github.com/amazon-research/esci-code</a><br>
+                            If you plan to use this dataset for your own research, please cite this paper.
+                        </p>
+                        <code>
+                            @article{reddy2022shopping,<br>
+                                title={Shopping Queries Dataset: A Large-Scale {ESCI} Benchmark for Improving Product Search},<br>
+                                author={Chandan K. Reddy and Lluís Màrquez and Fran Valero and Nikhil Rao and Hugo Zaragoza and Sambaran Bandyopadhyay and Arnab Biswas and Anlu Xing and Karthik Subbian},<br>
+                                year={2022},<br>
+                                eprint={2206.06588},<br>
+                                archivePrefix={arXiv}<br>
+                          }<br>
+                        </code>
+                        <br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
